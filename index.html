@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+  
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" class="display" id="result" value="0" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td><button onclick="num(this.innerHTML)">7</button></td>
+        <td><button onclick="num(this.innerHTML)">8</button></td>
+        <td><button onclick="num(this.innerHTML)">9</button></td>
+        <td><button onclick="ope(this.innerHTML)">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="num(this.innerHTML)">4</button></td>
+        <td><button onclick="num(this.innerHTML)">5</button></td>
+        <td><button onclick="num(this.innerHTML)">6</button></td>
+        <td><button onclick="ope(this.innerHTML)">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="num(this.innerHTML)">1</button></td>
+        <td><button onclick="num(this.innerHTML)">2</button></td>
+        <td><button onclick="num(this.innerHTML)">3</button></td>
+        <td><button onclick="ope(this.innerHTML)">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="num(this.innerHTML)">0</button></td>
+        <td><button onclick="num(this.innerHTML)">00</button></td>
+        <td><button onclick="point(this.innerHTML)">.</button></td>
+        <td><button onclick="ope(this.innerHTML)">/</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="allClear()">AC</button></td>
+        <td colspan="2"><button onclick="equal()">=</button></td>
+      </tr>
+    </table>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
